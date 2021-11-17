@@ -1,0 +1,66 @@
+@use "./colors.scss" as *;
+
+@media screen and (min-width: 1440px) {
+  body {
+    header.header {
+      & .header__container {
+        padding: 7.2rem 8.1rem 0 8.1rem;
+
+        & nav.header__nav {
+          & img {
+            width: 17.8rem;
+            height: 5rem;
+          }
+
+          & ul.nav__nav-list {
+            margin-top: 1.5rem;
+            font-size: 1.6rem;
+
+            & li:hover {
+              font-weight: 700;
+              text-decoration: underline;
+            }
+
+            & li:not(:first-of-type) {
+              margin-left: 3.7rem;
+            }
+          }
+        }
+      }
+
+      & .header__intro {
+        gap: 2rem;
+        padding: 10rem 30rem 0 32rem;
+        background-image: url(/images/bg-curvy-desktop.svg);
+        background-size: contain;
+        background-position: left -5rem bottom -18rem;
+        
+        
+        & img {
+          width: 71.6rem;
+          height: 53.8rem;
+        }
+
+        & h1.intro__heading {
+          font-size: 3.8rem;
+        }
+
+        & p.intro__description {
+          margin-top: 1.2rem;
+          padding: 0 9.7rem 0 11.9rem;
+          font-size: 2rem;
+        }
+
+        & a button {
+          padding: 2rem 10rem;
+          font-size: 1.6rem;
+          transform: translateX(5%);
+
+          &:hover {
+            background: $accent-CTA-hover;
+          }
+        }
+      }
+    }
+  }
+}
