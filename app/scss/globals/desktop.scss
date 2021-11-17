@@ -2,6 +2,7 @@
 
 @media screen and (min-width: 1440px) {
   body {
+    /* header styling */
     header.header {
       & .header__container {
         padding: 7.2rem 8.1rem 0 8.1rem;
@@ -30,12 +31,11 @@
 
       & .header__intro {
         gap: 2rem;
-        padding: 10rem 30rem 0 32rem;
+        padding: 10rem 33rem 19.5rem 30rem;
         background-image: url(/images/bg-curvy-desktop.svg);
         background-size: contain;
-        background-position: left -5rem bottom -18rem;
-        
-        
+        background-position: left -2rem bottom -2rem;
+
         & img {
           width: 71.6rem;
           height: 53.8rem;
@@ -58,6 +58,115 @@
 
           &:hover {
             background: $accent-CTA-hover;
+          }
+        }
+      }
+    }
+
+    /* main styling */
+    main.main {
+      /* get-started */
+      & .main__get-started {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: -1.8rem;
+        padding: 17rem 28.5rem 5rem 28.5rem;
+
+        & .get-started__top {
+          margin-top: -17.2rem;
+        }
+
+        & .get-started__top,
+        & .get-started__bottom {
+          flex-direction: row;
+          gap: 20rem;
+
+          & .get-started__details {
+            & img {
+              &.access {
+                width: 8.1rem;
+                height: 7.9rem;
+              }
+
+              &.security {
+                width: 7.2rem;
+                height: 8.3rem;
+              }
+
+              &.collab {
+                width: 8.3rem;
+                height: 7.1rem;
+              }
+
+              &.any-file {
+                width: 9.2rem;
+                height: 6.7rem;
+              }
+            }
+          }
+        }
+      }
+
+      /* stay productive */
+      & .main__stay-productive {
+        flex-direction: row;
+        gap: 5.5rem;
+        padding: 0 17.5rem 0 10.5rem;
+
+        & img {
+          width: 61.9rem;
+          height: 46.6rem;
+        }
+
+        & .stay-productive__content {
+          & h3.stay-productive__heading {
+            font-size: 4.2rem;
+            line-height: 1.3;
+          }
+
+          & p {
+            font-size: 1.6rem;
+          }
+
+          & .how-fylo-works {
+            &::after {
+              width: 35%;
+            }
+
+            &:hover::after {
+              border-bottom: 0.2rem solid $neutral-white;
+            }
+
+            & a {
+              font-size: 1.6rem;
+              &:hover {
+                color: $neutral-white;
+              }
+            }
+          }
+        }
+      }
+
+      /* testimonials */
+      & .main__testimonials {
+        display: flex;
+        flex-direction: row;
+        padding: 16.7rem 13.7rem;
+        gap: 2.5rem;
+
+        & .testimonial__content {
+          padding: 3.7rem 2rem 1.9rem 2.7rem;
+          
+
+          &:first-of-type::after {
+            top: 271.2%;
+            left: 8.5%;
+            transform: scale(100%);
+            z-index: -1; /* not working*/
+          }
+
+          & p.testimonial__description {
+            font-size: 1.45rem;
           }
         }
       }
