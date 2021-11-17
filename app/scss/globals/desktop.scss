@@ -151,7 +151,7 @@
       & .main__testimonials {
         display: flex;
         flex-direction: row;
-        padding: 16.7rem 13.7rem;
+        padding: 16.7rem 13.7rem 36.7rem 13.7rem;
         gap: 2.5rem;
 
         & .testimonial__content {
@@ -174,11 +174,13 @@
     /* get early access stying */
     & .get-early-access {
         padding: inherit;
+        top: 9.7rem;
       form {
         left: 10%;
         bottom: -251%;
         margin: 0 42.3rem 0 14.3rem; 
-        padding: 3.8rem 8.5rem 3.5rem 8.5rem;
+        padding: 4.8rem 8.5rem 4.5rem 8.5rem;
+        gap: 2.5rem;
         
         & h3.get-early-access__heading {
             font-size: 3rem;
