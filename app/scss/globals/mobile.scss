@@ -233,9 +233,9 @@ body {
   /* get early access stying */
 
   & .get-early-access {
-      position: relative;
-      top: 17.3rem;
-      bottom: -17.3rem;
+    position: relative;
+    top: 17.3rem;
+    bottom: -17.3rem;
     form {
       position: absolute;
       margin: 0 1.3rem;
@@ -288,6 +288,96 @@ body {
           padding: 1.6rem 8rem;
           border-radius: 2.5rem;
           white-space: nowrap;
+        }
+      }
+    }
+  }
+ 
+  /* footer styling */
+  & footer.footer {
+    padding: 24.5rem 2rem 4.6rem 3.5rem;
+    background-color: $primary-darkblue-footer-bg;
+
+    & .footer__logo {
+      margin-left: 0.5rem;
+    }
+
+    & .footer__details {
+      display: flex;
+      flex-direction: column;
+      margin-top: 4rem;
+      font-weight: 300;
+      opacity: 0.9;
+
+      & i.fas {
+        margin-right: 2.2rem;
+      }
+
+      & i.fa-map-marker-alt {
+        margin-top: 2rem;
+      }
+
+      & i.fa-phone-volume,
+      & i.fa-envelope-square {
+        margin-top: 0.7rem;
+      }
+
+      & .details__address,
+      & .details__phone-email {
+        display: flex;
+      }
+
+      & .details__address p {
+        font-size: 1.65rem;
+        line-height: 1.5;
+      }
+
+      & .details__phone-email {
+        flex-direction: column;
+
+        & .phone,
+        & .email {
+          display: flex;
+          margin-top: 2rem;
+        }
+      }
+
+      & .details__about-us,
+      & .details__contact-us {
+        font-size: 1.6rem;
+      }
+
+      & .details__about-us {
+        margin: 8.2rem 0 4.5rem 0;
+        & p:not(:last-of-type) {
+          margin-bottom: 2.4rem;
+        }
+      }
+
+      & .details__contact-us p:not(:last-of-type) {
+        margin-bottom: 2.4rem;
+      }
+
+      & .details__social-media {
+        margin-top: 8rem;
+        text-align: center;
+
+        & a {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border: 0.1rem solid $neutral-white;
+          border-radius: 50%;
+          height: 2.6rem;
+          width: 2.6rem;
+
+          &:not(:last-of-type) {
+              margin-right: 0.5rem;
+          }
+
+           & i {
+               font-size: 1.25rem;
+           }
         }
       }
     }

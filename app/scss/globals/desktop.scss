@@ -173,40 +173,92 @@
 
     /* get early access stying */
     & .get-early-access {
-        padding: inherit;
-        top: 9.7rem;
+      padding: inherit;
+      top: 9.7rem;
       form {
         left: 10%;
         bottom: -251%;
-        margin: 0 42.3rem 0 14.3rem; 
+        margin: 0 42.3rem 0 14.3rem;
         padding: 4.8rem 8.5rem 4.5rem 8.5rem;
         gap: 2.5rem;
-        
+
         & h3.get-early-access__heading {
-            font-size: 3rem;
+          font-size: 3rem;
         }
 
         & .get-early-access__email {
-            gap: 2.5rem;
+          gap: 2.5rem;
           flex-direction: row;
           & .email__error-message {
             & input {
-                padding: 1.7rem 30rem 1.7rem 3rem;
-                margin: unset;
+              padding: 1.7rem 30rem 1.7rem 3rem;
+              margin: unset;
             }
 
             & .error-message {
-                margin: 0.5rem 23.5rem 0 0;
-                font-size: 1rem;
+              margin: 0.5rem 23.5rem 0 0;
+              font-size: 1rem;
             }
           }
 
           & a button {
-              padding: 1.6rem 4rem;
+            padding: 1.6rem 4rem;
 
-              &:hover {
-                  background: $accent-CTA-hover;
-              }
+            &:hover {
+              background: $accent-CTA-hover;
+            }
+          }
+        }
+      }
+    }
+
+    /* footer styling */
+    & footer.footer {
+      padding: 17rem 2rem 4.6rem 12rem;
+
+      & .footer__logo img {
+        display: inline-block;
+        width: 10.9rem;
+        height: 3.3rem;
+      }
+
+      & .footer__details {
+        flex-direction: row;
+        padding-right: 23.5rem;
+
+        & .details__phone-email {
+          margin: -1rem 14.9rem 1rem 10rem;
+        }
+
+        & .details__links {
+          display: flex;
+          margin-right: -5.6rem;
+
+          & .details__about-us,
+          & .details__contact-us {
+            white-space: nowrap;
+
+            & a:hover {
+                font-weight: 700;
+            }
+          }
+
+          & .details__about-us {
+            margin: 0 10rem 0 0;
+          }
+        }
+
+        & .details__social-media {
+          display: flex;
+          margin-top: unset;
+          transform: translateX(15rem);
+
+          & a:hover {
+              color: $accent-cyany-CTA-gradient;
+          }
+
+          & a:not(:last-of-type) {
+              margin-right: 1.5rem;
           }
         }
       }
