@@ -185,17 +185,25 @@
 
     <!-- get early access -->
     <div class="get-early-access">
-        <h3 class="get-early-access__heading">
-            Get early access today
-        </h3>
-        <p class="get-early-access__description">
-            It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
-            questions, our support team would be happy to help you.
-        </p>
-        <div class="get-early-access__email">
-            <input type="email" id="email" placeholder="email@example.com">
-            <a href=""><button class="get-early-access__button">Get Started For Free</button></a>
-        </div>
+        <form id="form">
+
+            <h3 class="get-early-access__heading">
+                Get early access today
+            </h3>
+            <p class="get-early-access__description">
+                It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+                questions, our support team would be happy to help you.
+            </p>
+            <div class="get-early-access__email">
+                <div class="email__error-message">
+                    <input type="email" id="email" placeholder="email@example.com">
+                    <div class="error-message">Please enter a valid email address</div>
+                </div>
+                <a href=""><button class="get-early-access__button" type="submit" id="button">Get Started For
+                        Free</button></a>
+            </div>
+
+        </form>
     </div>
 
     <!-- footer -->

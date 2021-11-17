@@ -62,9 +62,9 @@ a, a:hover, a:focus, a:active {
 button {
   border: none;
   outline: none;
-  background: none;
   color: $neutral-white;
   cursor: pointer;
+  background: linear-gradient(to right, #65e2d9, #339ecc);
 }
 
 header, .get-early-access__email {

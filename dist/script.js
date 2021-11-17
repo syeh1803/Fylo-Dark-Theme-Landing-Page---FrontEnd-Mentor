@@ -1,2 +1,2 @@
-"use strict";
+"use strict";var form=document.querySelector("#form"),button=document.querySelector("#button"),errorMessage=document.querySelector(".error-message"),email=document.querySelector("#email"),isValidEmail=function(e){return/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(String(e).toLowerCase())};form.addEventListener("submit",(function(e){e.preventDefault();var r=email.value.trim();isValidEmail(r)?errorMessage.style.display="none":errorMessage.style.display="block"}));
 //# sourceMappingURL=script.js.map

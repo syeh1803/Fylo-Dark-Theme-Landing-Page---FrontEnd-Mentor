@@ -60,7 +60,6 @@ body {
       & a button {
         margin-top: 0.9rem;
         padding: 1.7rem 8.5rem;
-        background: linear-gradient(to right, #65e2d9, #339ecc);
         border-radius: 3rem;
       }
     }
@@ -178,11 +177,8 @@ body {
     & .main__testimonials {
       display: flex;
       flex-direction: column;
-      padding: 16.7rem 4.5rem;
+      padding: 16.7rem 4.5rem 33.7rem 4.5rem;
       gap: 2.5rem;
-
-      &::after {
-      }
 
       & .testimonial__content {
         padding: 2.7rem 3rem 1.9rem 2rem;
@@ -229,6 +225,69 @@ body {
               opacity: 0.8;
             }
           }
+        }
+      }
+    }
+  }
+
+  /* get early access stying */
+
+  & .get-early-access {
+      position: relative;
+      top: 17.3rem;
+      bottom: -17.3rem;
+    form {
+      position: absolute;
+      margin: 0 1.3rem;
+      padding: 3.8rem 3.2rem 3.5rem 3.2rem;
+      bottom: 20%;
+      border-radius: 1rem;
+      text-align: center;
+      background-color: $primary-darkblue-intro-email-bg;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      & h3.get-early-access__heading {
+        font-weight: 500;
+        letter-spacing: 0.05rem;
+      }
+
+      & p.get-early-access__description {
+        line-height: 1.6;
+        opacity: 0.9;
+      }
+
+      & .get-early-access__email {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        & .email__error-message {
+          & input {
+            margin: 1rem 0 0.5rem 0;
+            padding: 1.7rem 13rem 1.7rem 3rem;
+            font-size: 1rem;
+            color: $neutral-input;
+            border-radius: 2.5rem;
+            border: none;
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          & .error-message {
+            margin: 0.5rem 2.5rem 0 0;
+            color: $lightred-error;
+            display: none;
+          }
+        }
+
+        & a button {
+          padding: 1.6rem 8rem;
+          border-radius: 2.5rem;
+          white-space: nowrap;
         }
       }
     }
